@@ -6,15 +6,15 @@ MAINTAINER Tavisca Solutions
 
 # Add code files
 # NOTE: remove test folder
-ADD cars src
-RUN dotnet restore
-
+#ADD cars src
+#RUN dotnet restore
+#CMD dotnet build
 
 # Define working directory
-WORKDIR /src
+#WORKDIR /src
 
 # Expose port
-EXPOSE  4000
+#EXPOSE  4000
 
 # Run app using forever
-CMD dotnet run
+#CMD dotnet run
